@@ -1,3 +1,4 @@
+*,
 *::after,
 *::before {
   margin: 0;
@@ -71,5 +72,79 @@ body {
 .header__primary__sub {
   font-weight: 700;
   letter-spacing: 40px;
+}
+
+.row {
+  max-width: 114rem;
+  background-color: #96530c;
+}
+
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: #fff;
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  border-radius: 50%;
+  z-index: 100;
+}
+
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  background-image: radial-gradient(#eb8921, #96530c);
+  z-index: 80;
+  -webkit-transform: scale(80);
+          transform: scale(80);
+}
+
+.navigation__nav {
+  height: 100vh;
+  width: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 90;
+}
+
+.navigation__list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link:link, .navigation__link:visited {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-size: 220%;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.navigation__link:hover, .navigation__link:active {
+  background-position: 100%;
+  color: #f77f00;
 }
 /*# sourceMappingURL=main.css.map */

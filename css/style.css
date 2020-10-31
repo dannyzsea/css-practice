@@ -58,3 +58,7 @@ body {
 .header__primary__sub {
   font-weight: 700;
   letter-spacing: 40px; }
+
+.row {
+  max-width: 114rem;
+  background-color: #96530c; }
