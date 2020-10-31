@@ -19,7 +19,7 @@
 }
 .header__avatar {
   border-radius: 50%;
-  height: 200px;
+  height: 25vh;
   position: absolute;
   top: 40px;
   left: 40px;
@@ -28,7 +28,7 @@
 }
 .header__texbox {
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   object-fit: contain;
@@ -37,15 +37,15 @@
   color: $color-white;
   text-transform: uppercase;
   display: block;
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
-  letter-spacing: 20px;
+  letter-spacing: 2rem;
 }
 .header__primary__main {
   font-weight: 700;
-  letter-spacing: 40px;
+  letter-spacing: 4rm;
 }
 .header__primary__sub {
   font-weight: 700;
-  letter-spacing: 40px;
+  letter-spacing: 40rm;
 }
