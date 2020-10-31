@@ -3,7 +3,9 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -11,21 +13,26 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #777;
-  padding: 10px; }
+  padding: 10px;
+}
 
 .header {
   /* it means it should be 95% of the viewport height*/
   height: 95vh;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(126, 213, 111, 0.568)), to(rgba(40, 180, 133, 0.548))), url("../img/java.jpg");
   background-image: linear-gradient(to right, rgba(126, 213, 111, 0.568), rgba(40, 180, 133, 0.548)), url("../img/java.jpg");
   background-size: cover;
   background-position: top;
-  clip-path: polygon(0 0, 100% 0%, 100% 68%, 0 100%);
-  position: relative; }
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 68%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 68%, 0 100%);
+  position: relative;
+}
 
 .avatar__box {
   position: absolute;
   top: 40px;
-  left: 40px; }
+  left: 40px;
+}
 
 .header__avatar {
   border-radius: 50%;
@@ -33,15 +40,20 @@ body {
   position: absolute;
   top: 40px;
   left: 40px;
-  object-fit: contain;
-  border: solid 6px #fff; }
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: solid 6px #fff;
+}
 
 .header__texbox {
   position: absolute;
   top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  object-fit: contain; }
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 
 .header__primary {
   color: #fff;
@@ -49,12 +61,16 @@ body {
   display: block;
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: 20px; }
+  letter-spacing: 20px;
+}
 
 .header__primary__main {
   font-weight: 700;
-  letter-spacing: 40px; }
+  letter-spacing: 40px;
+}
 
 .header__primary__sub {
   font-weight: 700;
-  letter-spacing: 40px; }
+  letter-spacing: 40px;
+}
+/*# sourceMappingURL=main.css.map */
